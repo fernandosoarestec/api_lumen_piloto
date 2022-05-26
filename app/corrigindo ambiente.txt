@@ -1,0 +1,10 @@
+php -S localhost:8000 -t public
+php --version
+composer install 
+install illuminate
+composer require jenssegers/mongodb:^2.1
+composer require jenssegers/mongodb
+restart php-fpm  
+sudo pecl install mongodb      
+find / type f -name "composer.phar"
+composer create-project --prefer-dist laravel/lumen api-teste

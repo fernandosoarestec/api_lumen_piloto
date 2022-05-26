@@ -32,6 +32,15 @@ $router->group(['prefix' => 'clientes'], function () use ($router) {
     $router->delete('/{clientes}','ClientesController@delete');
 });
 
+$router->group(['prefix' => '/'], function () use ($router) {
+
+    $router->get('/listarusuarios', 'UsuariosController@listarUsuarios');
+
+    $router->get('/getusuario', 'UsuariosController@getUsuario');
+
+    
+});
+
 //Route::get('/clientes', 'ClientesController@showAll');
 
 
